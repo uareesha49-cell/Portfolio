@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 64" fill="none">
+  <defs>
+    <linearGradient id="auGrad" x1="4" y1="56" x2="92" y2="8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d4897a"/>
+      <stop offset="0.42" stop-color="#f0b8a8"/>
+      <stop offset="1" stop-color="#6b8ec4"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded frame -->
+  <rect x="2" y="6" width="92" height="52" rx="14" stroke="url(#auGrad)" stroke-width="1.5" opacity="0.4"/>
+  <rect x="2" y="6" width="92" height="52" rx="14" fill="url(#auGrad)" opacity="0.07"/>
+  <!-- A -->
+  <g stroke="url(#auGrad)" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 50 L30 12 L46 50"/>
+    <path d="M20 34h20"/>
+  </g>
+  <!-- U -->
+  <path fill="none" stroke="url(#auGrad)" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round" d="M54 34v8q0 10 12 10t12-10v-8"/>
+  <!-- Accent gem -->
+  <circle cx="86" cy="13" r="3.2" fill="url(#auGrad)"/>
+</svg>

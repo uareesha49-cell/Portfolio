@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <script>(function(){try{var t=localStorage.getItem("portfolio-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);else document.documentElement.setAttribute("data-theme","dark");}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Areesha Umar</title>
+  <meta name="description" content="Featured web projects by Areesha Umar.">
+  <link rel="icon" href="images/au-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Areesha Umar — home">
+        <img src="images/au-mark.svg" width="44" height="29" alt="" class="logo-mark" decoding="async">
+        <span class="logo-text">Areesha <span class="logo-surname">Umar</span></span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="socials.html">Socials</a></li>
+          <li><a href="contact.html">Reviews</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme" title="Light mode">
+          <span class="theme-toggle__icons" aria-hidden="true">
+            <svg class="theme-toggle__sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+            <svg class="theme-toggle__moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>
+          </span>
+        </button>
+        <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-hero reveal">
+      <h1>Featured projects</h1>
+      <p class="lead">Deployed sites and demos below; selected apps and front-end work that live in <strong>public GitHub repositories</strong> are in their own section.</p>
+    </header>
+
+    <section class="projects-section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="visually-hidden">Project list</h2>
+      <div class="projects-container">
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <img src="images/mindcare.png" alt="MindCare app website preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">MindCare app website</h3>
+            <p class="project-description">MindCare pairs instructor and therapist React + Vite apps — instructors build plans, manage a video library, and track attendance; therapists handle sessions, clients, and care workflows.</p>
+            <div class="project-links">
+              <a href="https://mindcare-instructor.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live — Instructor</a>
+              <a href="https://mindcare-therapist-ten.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live — Therapist</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/union.png" alt="Union Hub portal preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">Union Hub</h3>
+            <p class="project-description">Union Hub is a digital platform for union members — bringing essential union activities online: news, meetings, votes, contacts, contracts, benefits, and FAQs.</p>
+            <p class="project-description">HTML, CSS, Tailwind CSS, Material UI, React.js, and JavaScript for a responsive, interactive experience.</p>
+            <div class="project-links">
+              <a href="https://union-hub-two.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/time.png" alt="My Time app website preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">My Time app website</h3>
+            <p class="project-description">My Time is a business management platform to streamline operations and track activities. It helps organizations boost productivity with schedules and performance insights in one place.</p>
+            <div class="project-links">
+              <a href="https://my-time-branch.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live — Bank branch</a>
+              <a href="https://my-time-web.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live — Bank</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/eco1.png" alt="Eco Freeze website preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">Eco Freeze website</h3>
+            <p class="project-description">Eco Freeze is a smart cold storage management system for inventory and employee operations — helping businesses track performance and improve efficiency.</p>
+            <div class="project-links">
+              <a href="https://new-featured-branch.d1zfxe1h5sx10z.amplifyapp.com/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/feet1.png" alt="Fit My Feet website preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">Fit My Feet website</h3>
+            <p class="project-description">Authentication and ordering in one flow — a fully responsive React project focused on a smooth user experience.</p>
+            <div class="project-links">
+              <a href="https://fit-my-feet-web.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/Nard Foundation System.png" alt="Nard Foundation website preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">Nard Foundation website</h3>
+            <p class="project-description">Supports underprivileged communities through welfare projects — explore initiatives and donate with ease.</p>
+            <div class="project-links">
+              <a href="https://nardfoundationsiteeee.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/todo1.png" alt="To do list site preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">To do list site</h3>
+            <p class="project-description">Add daily tasks and mark them complete when you’re done — a simple workflow for everyday planning.</p>
+            <div class="project-links">
+              <a href="https://todolistappppp.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/aimcqs.png" alt="AI MCQs generator preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">AI MCQs generator</h3>
+            <p class="project-description">Generate MCQs with AI and download in multiple formats — built for students and teachers who need questions quickly.</p>
+            <div class="project-links">
+              <a href="https://aimcqs.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/calc1.png" alt="Calculator app preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">Calculator</h3>
+            <p class="project-description">Simple and scientific modes for everyday and advanced calculations — tailored to how you want to work.</p>
+            <div class="project-links">
+              <a href="https://calculatooorrrr.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/ai1.png" alt="AI image generator preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">AI image generator</h3>
+            <p class="project-description">Generate and download images with a modern UI — explore prompts and export results in a straightforward flow.</p>
+            <div class="project-links">
+              <a href="https://imagesai.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/quaiid1.png" alt="Quaid-e-Azam tribute site preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">Quaid-e-Azam tribute site</h3>
+            <p class="project-description">A tribute to Muhammad Ali Jinnah with historical information, a timeline, and interactive elements.</p>
+            <div class="project-links">
+              <a href="https://quaidtribute.netlify.app" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/project-placeholder.svg" alt="Chain of KO-mmand preview placeholder" class="project-image" loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">Chain of KO-mmand</h3>
+            <p class="project-description">Responsive React single-page marketing site for the Chain of KO-mmand mobile app, with QR-based deep links to the Apple App Store and Google Play.</p>
+            <div class="project-links">
+              <a href="mailto:areeshaumar44@gmail.com?subject=Chain%20of%20KO-mmand" class="project-link"><i class="fas fa-envelope" aria-hidden="true"></i> Request link</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/keystone.png" alt="Keystone website preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">Keystone</h3>
+            <p class="project-description">Responsive multi-page marketing site for a startup advisory firm — services, case studies, and team.</p>
+            <div class="project-links">
+              <a href="https://keystone-inky.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/ohless.png" alt="Ohless marketing site preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">Ohless</h3>
+            <p class="project-description">Marketing site for Ohless — helping users manage and understand debt more calmly. UX copy, layout, and responsive components to explain complex financial ideas in a simple, reassuring way.</p>
+            <div class="project-links">
+              <a href="https://ohless-nine.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/beauji.png" alt="Beauji admin preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">Beauji</h3>
+            <p class="project-description">Admin experience for Beauji — authentication and dashboard flows (login entry).</p>
+            <div class="project-links">
+              <a href="https://beauji-admin.vercel.app/login" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/africon.png" alt="AfriconnIQ website preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">AfriconnIQ</h3>
+            <p class="project-description">Brand and product web experience for AfriconnIQ — deployed on Vercel.</p>
+            <div class="project-links">
+              <a href="https://africooniq.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/sowhattson.png" alt="So What's On admin preview" class="project-image" data-lightbox loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">So What's On</h3>
+            <p class="project-description">Admin app for So What's On — login and internal tooling (Vercel deploy).</p>
+            <div class="project-links">
+              <a href="https://sowhattson.vercel.app/login" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> View live</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      </div>
+    </section>
+
+    <section class="projects-github reveal" aria-labelledby="github-projects-heading">
+      <div class="projects-github__intro">
+        <h2 id="github-projects-heading" class="projects-github__title">On GitHub</h2>
+        <p class="projects-github__lead">These projects are published as <strong>public repositories</strong> — source code, README, and setup instructions are on GitHub.</p>
+        <a href="https://github.com/AreeshaUmar91" class="projects-github__profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> github.com/AreeshaUmar91</a>
+      </div>
+      <div class="projects-container projects-container--github">
+        <div class="projects-grid">
+          <article class="project-card project-card--github reveal">
+            <div class="project-content">
+              <span class="project-github-badge"><i class="fab fa-github" aria-hidden="true"></i> GitHub</span>
+              <h3 class="project-title">Skin care products website</h3>
+              <p class="project-repo">Repo: <strong>SkinCareFrontend</strong></p>
+              <p class="project-description">Clean, mobile-friendly product showcase with category filtering and a contact form. HTML, CSS, Bootstrap, and JavaScript.</p>
+              <div class="project-links">
+                <a href="https://github.com/AreeshaUmar91/SkinCareFrontend" class="project-link project-link--github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Open repository</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--github reveal">
+            <div class="project-content">
+              <span class="project-github-badge"><i class="fab fa-github" aria-hidden="true"></i> GitHub</span>
+              <h3 class="project-title">Smiling face detection app</h3>
+              <p class="project-repo">Repo: <strong>Smile-Detector</strong></p>
+              <p class="project-description">Real-time face detection with machine learning — identify and highlight smiling faces through a webcam interface.</p>
+              <div class="project-links">
+                <a href="https://github.com/AreeshaUmar91/Smile-Detector" class="project-link project-link--github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Open repository</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--github reveal">
+            <div class="project-content">
+              <span class="project-github-badge"><i class="fab fa-github" aria-hidden="true"></i> GitHub</span>
+              <h3 class="project-title">Camera blocking detector</h3>
+              <p class="project-repo">Repo: <strong>CameraBlockingDetector</strong> · Python</p>
+              <p class="project-description">Real-time detection for blocked cameras, with SMS alerting and live location context for security workflows.</p>
+              <div class="project-links">
+                <a href="https://github.com/AreeshaUmar91/CameraBlockingDetector" class="project-link project-link--github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Open repository</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--github reveal">
+            <div class="project-content">
+              <span class="project-github-badge"><i class="fab fa-github" aria-hidden="true"></i> GitHub</span>
+              <h3 class="project-title">University management system</h3>
+              <p class="project-repo">Repo: <strong>TrioScriptUni</strong></p>
+              <p class="project-description">Role-based flows for admin, students, and teachers to manage university records and day-to-day operations.</p>
+              <div class="project-links">
+                <a href="https://github.com/AreeshaUmar91/TrioScriptUni" class="project-link project-link--github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Open repository</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="career-panel reveal" aria-labelledby="career-title">
+      <div class="career-panel__inner">
+        <h2 id="career-title" class="career-panel__title">Career highlights</h2>
+        <ul class="career-panel__list">
+          <li>Built and deployed multiple self-initiated web projects using modern tools and technologies.</li>
+          <li>Strengthened skills in UI/UX design, responsive layouts, and component-based architecture.</li>
+          <li>Proficient in Git and GitHub for source control and collaborative development.</li>
+          <li>Committed to continuous learning and growth as a front-end developer.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Made with care by Areesha Umar · <a href="socials.html">Socials</a> · <a href="contact.html">Reviews</a></p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-label="Image preview">
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+      <img id="lightbox-img" class="lightbox-img" src="" alt="">
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <script>(function(){try{var t=localStorage.getItem("portfolio-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);else document.documentElement.setAttribute("data-theme","dark");}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Areesha Umar — Frontend Developer</title>
+  <meta name="description" content="Portfolio of Areesha Umar — frontend developer at TX Dynamics with 8+ months experience; React, Tailwind, and APIs.">
+  <link rel="icon" href="images/au-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Areesha Umar — home">
+        <img src="images/au-mark.svg" width="44" height="29" alt="" class="logo-mark" decoding="async">
+        <span class="logo-text">Areesha <span class="logo-surname">Umar</span></span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="socials.html">Socials</a></li>
+          <li><a href="contact.html">Reviews</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme" title="Light mode">
+          <span class="theme-toggle__icons" aria-hidden="true">
+            <svg class="theme-toggle__sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+            <svg class="theme-toggle__moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>
+          </span>
+        </button>
+        <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-home reveal">
+      <h1>Hello, I’m <span class="name">Areesha Umar</span></h1>
+      <p>
+        I’m a frontend developer who enjoys turning ideas into clear, responsive interfaces.
+        I focus on React.js, Tailwind CSS, and API integration — and on experiences that feel as good as they look.
+        I’ve been a <strong>frontend developer at TX Dynamics</strong> for <strong>8 months</strong> (ongoing), shipping real product UI in a professional team.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="projects.html"><i class="fas fa-layer-group" aria-hidden="true"></i> View projects</a>
+        <a class="btn btn-ghost" href="contact.html"><i class="fas fa-star" aria-hidden="true"></i> Leave a review</a>
+      </div>
+
+      <div class="hero-socials reveal">
+        <span class="hero-socials__label">Online</span>
+        <div class="hero-socials__links">
+          <a class="hero-social-link hero-social-link--linkedin" href="https://www.linkedin.com/in/areeshaumar/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a>
+          <a class="hero-social-link hero-social-link--github" href="https://github.com/AreeshaUmar91" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="tech-strip reveal">
+        <header class="tech-strip__header">
+          <h2 class="tech-strip__title">Frontend <span class="tech-strip__accent">focus</span></h2>
+          <p class="tech-strip__subtitle">Stack &amp; practices I ship with</p>
+        </header>
+        <ul class="tech-tags" role="list">
+          <li class="tech-tag"><i class="fas fa-code" aria-hidden="true"></i> Web developer</li>
+          <li class="tech-tag"><i class="fas fa-laptop-code" aria-hidden="true"></i> Frontend developer</li>
+          <li class="tech-tag tech-tag--react"><i class="fab fa-react" aria-hidden="true"></i> React.js</li>
+          <li class="tech-tag tech-tag--bootstrap"><i class="fab fa-bootstrap" aria-hidden="true"></i> Bootstrap</li>
+          <li class="tech-tag tech-tag--tailwind"><i class="fas fa-wind" aria-hidden="true"></i> Tailwind CSS</li>
+          <li class="tech-tag"><i class="fas fa-palette" aria-hidden="true"></i> Material UI</li>
+          <li class="tech-tag"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i> Responsive websites</li>
+          <li class="tech-tag tech-tag--html"><i class="fab fa-html5" aria-hidden="true"></i> HTML</li>
+          <li class="tech-tag tech-tag--css"><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS3</li>
+          <li class="tech-tag tech-tag--js"><i class="fab fa-js" aria-hidden="true"></i> JavaScript</li>
+          <li class="tech-tag tech-tag--git"><i class="fab fa-github" aria-hidden="true"></i> Git &amp; GitHub</li>
+          <li class="tech-tag"><i class="fas fa-plug" aria-hidden="true"></i> API integration</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Made with care by Areesha Umar · <a href="socials.html">Socials</a> · <a href="contact.html">Reviews</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

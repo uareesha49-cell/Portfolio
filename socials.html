@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <script>(function(){try{var t=localStorage.getItem("portfolio-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);else document.documentElement.setAttribute("data-theme","dark");}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socials — Areesha Umar</title>
+  <meta name="description" content="Connect with Areesha Umar on LinkedIn and GitHub.">
+  <link rel="icon" href="images/au-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Areesha Umar — home">
+        <img src="images/au-mark.svg" width="44" height="29" alt="" class="logo-mark" decoding="async">
+        <span class="logo-text">Areesha <span class="logo-surname">Umar</span></span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="socials.html" aria-current="page">Socials</a></li>
+          <li><a href="contact.html">Reviews</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme" title="Light mode">
+          <span class="theme-toggle__icons" aria-hidden="true">
+            <svg class="theme-toggle__sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+            <svg class="theme-toggle__moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>
+          </span>
+        </button>
+        <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-hero reveal">
+      <h1>Connect</h1>
+      <p class="lead">Find me on <strong>LinkedIn</strong> and <strong>GitHub</strong> — open to collaboration and new opportunities.</p>
+    </header>
+
+    <p class="socials-intro reveal">I share projects, experiments, and professional updates across these profiles. Follow or reach out anytime.</p>
+
+    <section aria-labelledby="socials-heading">
+      <h2 id="socials-heading" class="visually-hidden">Social profiles</h2>
+      <div class="socials-grid">
+
+        <article class="social-card social-card--linkedin reveal">
+          <div class="social-card__icon" aria-hidden="true"><i class="fab fa-linkedin-in"></i></div>
+          <h3 class="social-card__title">LinkedIn</h3>
+          <p class="social-card__desc">Professional background, experience, and the best place to message me for roles or partnerships.</p>
+          <a class="social-card__cta" href="https://www.linkedin.com/in/areeshaumar/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Open LinkedIn</a>
+        </article>
+
+        <article class="social-card social-card--github reveal">
+          <div class="social-card__icon" aria-hidden="true"><i class="fab fa-github"></i></div>
+          <h3 class="social-card__title">GitHub</h3>
+          <p class="social-card__desc">Repositories, code samples, and ongoing experiments — including frontend work and small tools.</p>
+          <a class="social-card__cta" href="https://github.com/AreeshaUmar91" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Open GitHub</a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Made with care by Areesha Umar · <a href="https://www.linkedin.com/in/areeshaumar/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/AreeshaUmar91" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

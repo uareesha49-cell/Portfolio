@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <script>(function(){try{var t=localStorage.getItem("portfolio-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);else document.documentElement.setAttribute("data-theme","dark");}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs — Areesha Umar</title>
+  <meta name="description" content="Web development notes and insights by Areesha Umar.">
+  <link rel="icon" href="images/au-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Areesha Umar — home">
+        <img src="images/au-mark.svg" width="44" height="29" alt="" class="logo-mark" decoding="async">
+        <span class="logo-text">Areesha <span class="logo-surname">Umar</span></span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blogs.html" aria-current="page">Blogs</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="socials.html">Socials</a></li>
+          <li><a href="contact.html">Reviews</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme" title="Light mode">
+          <span class="theme-toggle__icons" aria-hidden="true">
+            <svg class="theme-toggle__sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+            <svg class="theme-toggle__moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>
+          </span>
+        </button>
+        <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-hero reveal">
+      <h1>Web development insights</h1>
+      <p class="lead">Notes on JavaScript, React, CSS, APIs, and how we build for the modern web.</p>
+    </header>
+
+    <section aria-labelledby="blogs-heading">
+      <h2 id="blogs-heading" class="section-title">Articles</h2>
+      <div class="blogs-grid">
+
+        <article class="blog-card reveal">
+          <div class="inner">
+            <h3 class="blog-title">Why JavaScript Is Important</h3>
+            <div class="blog-content">
+              <p>JavaScript is a cornerstone of the web, alongside HTML and CSS. HTML gives structure, CSS handles styling, and JavaScript adds interactivity, dynamic content, and responsiveness.</p>
+              <p>It runs natively in every major browser, which makes it essential for client‑side development and a natural place to grow deeper skills.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="inner">
+            <h3 class="blog-title">Why We Choose Coding for Web Development</h3>
+            <div class="blog-content">
+              <p>Web development is one of the most creative and impactful fields in tech. Coding lets you shape sites and apps that reach people everywhere.</p>
+              <p>Strong coding skills help you control both how things look and how they behave — performance, customization, and new tools all build on that foundation.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="inner">
+            <h3 class="blog-title">The Importance of Full Stack Development</h3>
+            <div class="blog-content">
+              <p>Full stack means working on both client and server sides. That versatility is valued for problem‑solving and seeing the whole product.</p>
+              <p>From responsive interfaces with HTML, CSS, and JavaScript to databases, servers, and APIs — full stack developers can follow a feature end to end.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="inner">
+            <h3 class="blog-title">Responsive Layouts with Modern CSS</h3>
+            <div class="blog-content">
+              <p>Flexbox and Grid changed how we structure pages. Used together, they make complex layouts easier to reason about and more resilient across screen sizes.</p>
+              <p>Fluid type, clamp(), and container queries help interfaces scale gracefully without endless breakpoint tweaks.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="inner">
+            <h3 class="blog-title">Why React Works for Component‑Driven UIs</h3>
+            <div class="blog-content">
+              <p>React encourages you to break the UI into reusable pieces with clear data flow. That mindset speeds up iteration and keeps large codebases maintainable.</p>
+              <p>Hooks and a rich ecosystem mean you can focus on product behavior while leaning on proven patterns for state and side effects.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="inner">
+            <h3 class="blog-title">Bootstrap, Tailwind, and Material UI</h3>
+            <div class="blog-content">
+              <p>Utility‑first CSS (Tailwind) and component libraries (Bootstrap, MUI) each solve different problems: speed of styling versus consistency and accessibility out of the box.</p>
+              <p>Choosing one depends on team taste, design system needs, and how much custom visual language the project requires.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="inner">
+            <h3 class="blog-title">Integrating APIs on the Frontend</h3>
+            <div class="blog-content">
+              <p>Most interactive sites load or send data through APIs. Clear loading, error, and empty states make those requests feel intentional instead of fragile.</p>
+              <p>Understanding JSON, authentication basics, and CORS saves hours when connecting a React or vanilla JS UI to a real backend.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="inner">
+            <h3 class="blog-title">Git &amp; GitHub in Everyday Frontend Work</h3>
+            <div class="blog-content">
+              <p>Version control is how you experiment safely, review changes, and collaborate. Meaningful commits and branches tell a story when you revisit a project.</p>
+              <p>GitHub also doubles as a portfolio: README files and live demos help others understand what you built and how to run it.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="inner">
+            <h3 class="blog-title">Performance and Perceived Speed</h3>
+            <div class="blog-content">
+              <p>Real performance matters — lazy loading images, splitting bundles, and avoiding layout shift — but perceived speed matters too.</p>
+              <p>Skeleton screens, optimistic UI, and thoughtful animations can make an app feel fast even while data is still on the way.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="inner">
+            <h3 class="blog-title">Accessibility as Part of Frontend Craft</h3>
+            <div class="blog-content">
+              <p>Semantic HTML, keyboard navigation, and sufficient contrast are not extras; they are part of shipping a professional interface.</p>
+              <p>Small habits — labels on inputs, focus styles, and ARIA where it helps — compound into experiences everyone can use.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Made with care by Areesha Umar · <a href="socials.html">Socials</a> · <a href="contact.html">Reviews</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

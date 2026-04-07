@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <script>(function(){try{var t=localStorage.getItem("portfolio-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);else document.documentElement.setAttribute("data-theme","dark");}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews — Areesha Umar</title>
+  <meta name="description" content="Leave a rating and short review for Areesha Umar’s portfolio.">
+  <link rel="icon" href="images/au-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Areesha Umar — home">
+        <img src="images/au-mark.svg" width="44" height="29" alt="" class="logo-mark" decoding="async">
+        <span class="logo-text">Areesha <span class="logo-surname">Umar</span></span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="socials.html">Socials</a></li>
+          <li><a href="contact.html" aria-current="page">Reviews</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme" title="Light mode">
+          <span class="theme-toggle__icons" aria-hidden="true">
+            <svg class="theme-toggle__sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+            <svg class="theme-toggle__moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>
+          </span>
+        </button>
+        <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="review-page">
+    <header class="page-hero reveal">
+      <h1>Reviews</h1>
+      <p class="lead">Share a star rating and your name — it appears below for others to see. For direct email, use <a href="mailto:areeshaumar44@gmail.com">areeshaumar44@gmail.com</a>.</p>
+    </header>
+
+    <section class="contact-layout reveal" aria-labelledby="review-form-heading">
+      <h2 id="review-form-heading" class="visually-hidden">Submit a review</h2>
+      <form id="review-form" class="review-form contact-form" novalidate>
+        <div class="form-group">
+          <label for="reviewer-name">Your name</label>
+          <input type="text" id="reviewer-name" name="name" required autocomplete="name" maxlength="80" placeholder="How you’d like to appear">
+        </div>
+
+        <fieldset class="form-group star-fieldset">
+          <legend class="star-fieldset__legend">Your rating <span class="star-fieldset__req" aria-hidden="true">*</span></legend>
+          <div class="star-rating" role="radiogroup" aria-label="Rating from 1 to 5 stars">
+            <input type="hidden" id="rating-value" name="rating" value="">
+            <div class="star-rating__buttons">
+              <button type="button" class="star-rating__btn" data-value="1" aria-label="1 star" aria-pressed="false"><i class="fas fa-star" aria-hidden="true"></i></button>
+              <button type="button" class="star-rating__btn" data-value="2" aria-label="2 stars" aria-pressed="false"><i class="fas fa-star" aria-hidden="true"></i></button>
+              <button type="button" class="star-rating__btn" data-value="3" aria-label="3 stars" aria-pressed="false"><i class="fas fa-star" aria-hidden="true"></i></button>
+              <button type="button" class="star-rating__btn" data-value="4" aria-label="4 stars" aria-pressed="false"><i class="fas fa-star" aria-hidden="true"></i></button>
+              <button type="button" class="star-rating__btn" data-value="5" aria-label="5 stars" aria-pressed="false"><i class="fas fa-star" aria-hidden="true"></i></button>
+            </div>
+            <p class="star-rating__hint" id="star-hint">Tap a star to choose 1–5.</p>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="review-comment">Comment <span class="optional-label">(optional)</span></label>
+          <textarea id="review-comment" name="comment" rows="4" maxlength="500" placeholder="What stood out about the portfolio or projects?"></textarea>
+        </div>
+
+        <p class="review-form__note" id="review-form-note" role="status" aria-live="polite"></p>
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-star" aria-hidden="true"></i> Submit review
+        </button>
+      </form>
+    </section>
+
+    <section class="reviews-board reveal" aria-labelledby="reviews-board-title">
+      <div class="reviews-board__head">
+        <h2 id="reviews-board-title" class="reviews-board__title">Visitor reviews</h2>
+        <p class="reviews-board__avg" id="reviews-average" hidden></p>
+      </div>
+      <p class="reviews-empty" id="reviews-empty">No reviews yet — add yours above.</p>
+      <ul id="reviews-list" class="reviews-list" role="list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Made with care by Areesha Umar · <a href="socials.html">Socials</a> · <a href="mailto:areeshaumar44@gmail.com">areeshaumar44@gmail.com</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
