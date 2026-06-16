@@ -105,6 +105,93 @@
     });
   }
 
+  /* TX Dynamics tenure — counted from July 2025, updates each month */
+  (function experienceMonths() {
+    var START_YEAR = 2025;
+    var START_MONTH = 7;
+
+    function getExperienceMonths() {
+      var now = new Date();
+      var start = new Date(START_YEAR, START_MONTH - 1, 1);
+      if (now < start) return 0;
+      return (
+        (now.getFullYear() - start.getFullYear()) * 12 +
+        (now.getMonth() - start.getMonth()) +
+        1
+      );
+    }
+
+    function monthWord(n) {
+      return n === 1 ? "month" : "months";
+    }
+
+    function yearWord(n) {
+      return n === 1 ? "year" : "years";
+    }
+
+    function formatDuration(months) {
+      if (months < 12) {
+        return months + " " + monthWord(months);
+      }
+      var years = Math.floor(months / 12);
+      var rem = months % 12;
+      if (rem === 0) {
+        return years + " " + yearWord(years);
+      }
+      return years + " " + yearWord(years) + " " + rem + " " + monthWord(rem);
+    }
+
+    function formatDurationShort(months) {
+      if (months < 12) {
+        return months + " mo";
+      }
+      var years = Math.floor(months / 12);
+      var rem = months % 12;
+      if (rem === 0) {
+        return years + " yr";
+      }
+      return years + " yr " + rem + " mo";
+    }
+
+    function formatExperience(n, format) {
+      switch (format) {
+        case "count":
+          return String(n);
+        case "mo":
+          return formatDurationShort(n);
+        case "months":
+          return formatDuration(n);
+        case "months-ongoing":
+        case "duration-ongoing":
+          return formatDuration(n) + " (ongoing)";
+        case "months-in-role":
+          return formatDuration(n) + " in role (ongoing).";
+        case "lead":
+          return formatDuration(n) + " (and counting) as a frontend developer at TX Dynamics";
+        case "meta":
+          if (n >= 12) {
+            var years = Math.floor(n / 12);
+            return years + "+ " + yearWord(years);
+          }
+          return n + "+ months";
+        default:
+          return formatDuration(n);
+      }
+    }
+
+    var months = getExperienceMonths();
+    document.querySelectorAll("[data-experience]").forEach(function (el) {
+      var format = el.getAttribute("data-experience") || "months";
+      el.textContent = formatExperience(months, format);
+    });
+
+    var meta = document.querySelector('meta[name="description"][data-experience-meta]');
+    if (meta) {
+      var tpl = meta.getAttribute("content") || "";
+      meta.setAttribute("content", tpl.replace("__EXPERIENCE__", formatExperience(months, "meta")));
+    }
+  })();
+
   /* Reviews (contact.html): name + stars + list in localStorage */
   var REVIEW_STORAGE_KEY = "areesha-portfolio-reviews";
   var REVIEW_MAX = 60;

@@ -1620,6 +1620,16 @@ main.edu-page {
   color: var(--text-muted);
 }
 
+.edu-lead a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.edu-lead a:hover {
+  text-decoration: underline;
+}
+
 .edu-stats {
   list-style: none;
   margin: 0;
