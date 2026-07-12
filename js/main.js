@@ -105,21 +105,9 @@
     });
   }
 
-  /* TX Dynamics tenure — counted from July 2025, updates each month */
+  /* TX Dynamics tenure — fixed 1 year remote experience */
   (function experienceMonths() {
-    var START_YEAR = 2025;
-    var START_MONTH = 7;
-
-    function getExperienceMonths() {
-      var now = new Date();
-      var start = new Date(START_YEAR, START_MONTH - 1, 1);
-      if (now < start) return 0;
-      return (
-        (now.getFullYear() - start.getFullYear()) * 12 +
-        (now.getMonth() - start.getMonth()) +
-        1
-      );
-    }
+    var MONTHS = 12;
 
     function monthWord(n) {
       return n === 1 ? "month" : "months";
@@ -160,14 +148,13 @@
         case "mo":
           return formatDurationShort(n);
         case "months":
-          return formatDuration(n);
         case "months-ongoing":
         case "duration-ongoing":
-          return formatDuration(n) + " (ongoing)";
+          return formatDuration(n);
         case "months-in-role":
-          return formatDuration(n) + " in role (ongoing).";
+          return formatDuration(n) + " in role.";
         case "lead":
-          return formatDuration(n) + " (and counting) as a frontend developer at TX Dynamics";
+          return formatDuration(n) + " as a frontend developer at TX Dynamics";
         case "meta":
           if (n >= 12) {
             var years = Math.floor(n / 12);
@@ -179,7 +166,7 @@
       }
     }
 
-    var months = getExperienceMonths();
+    var months = MONTHS;
     document.querySelectorAll("[data-experience]").forEach(function (el) {
       var format = el.getAttribute("data-experience") || "months";
       el.textContent = formatExperience(months, format);
